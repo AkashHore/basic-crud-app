@@ -10,3 +10,9 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+model UserTable {
+  userId    String @id
+  userName  String
+  userEmail String @unique
+}
