@@ -12,7 +12,7 @@ datasource db {
 }
 
 model UserTable {
-  userId    String @id
+  userId    String @id @default(uuid())
   userName  String
   userEmail String @unique
 }
